@@ -1,4 +1,4 @@
-# IOSTrouble
+# IOSTroubles
 一些奇奇怪怪的编译、崩溃问题的解决办法
 
 ### xcode升级后编译报错Failed to find or create execution context for description...
