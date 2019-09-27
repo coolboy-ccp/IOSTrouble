@@ -7,6 +7,28 @@
 sudo killall -9 com.apple.CoreSimulator.CoreSimulatorService
 3. 重启Xcode ;
 
+### 安装cocoapods
+1. 暗转rvm
+* curl -L get.rvm.io | bash -s stable 
+* source ~/.bashrc
+* source ~/.bash_profile
+2. 安装homebrew if need
+* /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+3. 升级ruby
+* rvm list known
+* rvm install 2.5.1
+* rvm use 2.5.1 --default
+4. 升级gem
+* sudo gem update --system
+5. 替换源
+* gem sources --remove https://rubygems.org/
+* gem sources --add https://gems.ruby-china.com/
+* gem sources -l
+6. 安装cocoapods
+* sudo gem install -n /usr/local/bin cocoapods
+* sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer如果安装了多个版本的xcode时，使用此命令选择xcode版本
+* pod setup
+
 ### 升级cocoapods
 1. 更新gem：sudo gem update --system
 2. 删除gem源：gem sources --remove https://ruby.taobao.org/  if need
