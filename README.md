@@ -37,3 +37,9 @@ sudo killall -9 com.apple.CoreSimulator.CoreSimulatorService
 5. 升级cocoapods：sudo gem install -n /usr/local/bin cocoapods
 6. 查看升级后的cocoapods版本：pod --version
 
+### .json & .plist
+1. json to plist:
+plutil -convert xml1 data.json -o data.plist
+2. plist to json: 
+plutil -convert json data.plist -o data.json
+
